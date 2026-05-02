@@ -37,6 +37,6 @@ app.use("/api" , cartRoutes)
 app.use("/api" , addressRoutes)
 app.use("/api" , orderRoutes);
 app.listen(port , ()=> {
-    console.log(`server is running on port http://localhost:${port}`);
+    console.log(`server is running`);
     connectDb();
 })
