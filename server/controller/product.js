@@ -1,4 +1,4 @@
-import { Product } from "../models/product.js";
+import { Product } from "../models/Product.js";
 import TryCatch from "../utils/tryCatch.js";
 import bufferGenerator from "../utils/bufferGenerator.js";
 import cloudinary from "cloudinary";
