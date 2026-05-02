@@ -1,6 +1,6 @@
 import { Cart } from "../models/Cart.js";
 import { Order } from "../models/Order.js";
-import { Product } from "../models/product.js";
+import { Product } from "../models/Product.js";
 import sendOrderConfirmation from "../utils/sendOrderConfirmation.js";
 import TryCatch from "../utils/tryCatch.js";
 

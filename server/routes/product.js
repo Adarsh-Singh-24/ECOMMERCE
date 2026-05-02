@@ -1,10 +1,10 @@
 import express from "express";
 import { isAuth } from "../middlewares/isAuth.js";
 import uploadFiles from "../middlewares/multer.js";
-import { createProduct, updateProductImage } from "../controller/product.js";
-import { getAllProducts } from "../controller/product.js";
-import { getSingleProduct } from "../controller/product.js";
-import { updateProduct } from "../controller/product.js";
+import { createProduct, updateProductImage } from "../controller/Product.js";
+import { getAllProducts } from "../controller/Product.js";
+import { getSingleProduct } from "../controller/Product.js";
+import { updateProduct } from "../controller/Product.js";
 
 const router = express.Router();
 

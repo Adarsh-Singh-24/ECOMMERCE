@@ -1,5 +1,5 @@
 import { Cart } from "../models/Cart.js";
-import { Product } from "../models/product.js";
+import { Product } from "../models/Product.js";
 import TryCatch from "../utils/tryCatch.js";
 
 export const addToCart = TryCatch(async (req, res) => {
