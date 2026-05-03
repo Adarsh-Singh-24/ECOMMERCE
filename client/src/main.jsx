@@ -7,7 +7,9 @@ import { ThemeProvider } from './context/ThemeContext.jsx'
 import { Toaster } from 'react-hot-toast'
 import axios from 'axios';
 
-// Set global base URL for production (Vercel)
+// Set global base URL for axios
+// For same-origin requests (same domain), use empty string
+// For cross-origin, set VITE_SERVER_URL in .env files
 axios.defaults.baseURL = import.meta.env.VITE_SERVER_URL || '';
 
 createRoot(document.getElementById('root')).render(

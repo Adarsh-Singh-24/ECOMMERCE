@@ -46,7 +46,7 @@ export const CartProvider = ({ children }) => {
   const removeFromCart = async (id) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.get(`/api/cart/remove/${id}`, { 
+      await axios.delete(`/api/cart/remove/${id}`, { 
         headers: { Authorization: `Bearer ${token}` } 
       });
       fetchCart();

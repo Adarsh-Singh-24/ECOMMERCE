@@ -43,5 +43,10 @@ app.use("/api", orderRoutes);
 // connect DB (once)
 connectDb();
 
-// ❗ IMPORTANT: export instead of listen
+// Start server
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
 export default app;

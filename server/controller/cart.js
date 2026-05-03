@@ -78,7 +78,7 @@ export const updateCart = TryCatch(async (req , res) => {
             })
         }
 
-        res.json({
+        return res.json({
             message : "cart updated"
         })
     }
@@ -95,7 +95,7 @@ export const updateCart = TryCatch(async (req , res) => {
                 message : "you have only one item in cart"
             })
         }
-        res.json({
+        return res.json({
             message : "cart updated"
         })
     }
